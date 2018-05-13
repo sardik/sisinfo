@@ -151,8 +151,8 @@ function hapusfoto(){
                   <input type="text" value="<?php echo $agama; ?>" class="form-control" id="agama" name="agama" placeholder="Isi Agama" required title="isi Agama">
                 </div>
                 <div class="form-group">
-                  <label for="nohp">Nomer Handphone</label> 
-                  <input type="text" class="form-control" value="<?php echo $nohp; ?>" id="nohp" name="nohp" placeholder="Isi Nomer Handphone" required>
+                  <label for="nohp">Nomor Handphone</label> 
+                  <input type="text" class="form-control" value="<?php echo $nohp; ?>" id="nohp" name="nohp" placeholder="Isi Dengan Angka" onkeyup="validAngka(this)" required>
                 </div>
                 <div class="form-group">
                   <label for="nohp">Email</label> 
@@ -186,5 +186,15 @@ function hapusfoto(){
 
 
 <!-- DataTables -->
+
+<script language='javascript'>
+function validAngka(a)
+{
+	if(!/^[0-9.]+$/.test(a.value))
+	{
+	a.value = a.value.substring(0,a.value.length-1000);
+	}
+}
+</script>
 
 
