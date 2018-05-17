@@ -1,7 +1,7 @@
 <?php
 class database {
 	function koneksi () {
-	$koneksi = mysqli_connect('sql12.freesqldatabase.com','sql12237101','3P3zdMvkdE','sql12237101');
+	$koneksi = mysqli_connect('mirrorsfa.tk','sar','s4r','sar');
 	return $koneksi;
 	}
 }
