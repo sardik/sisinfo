@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $PdfModulName = $_POST['modul_name'];
         $PdfFileExtension = $PdfInfo['extension'];
 
-        $uploadfile = $_SERVER['DOCUMENT_ROOT'] . '/sis/files/'.$PdfName.'.'.$PdfFileExtension;
+        $uploadfile = $_SERVER['DOCUMENT_ROOT'] . '/files/'.$PdfName.'.'.$PdfFileExtension;
         $date = date('d-m-y');
  
         try{
