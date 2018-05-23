@@ -11,6 +11,9 @@ if (isset($_POST['simpan'])) {
   if ($getLastNip != false) {
       $lastnip = $getLastNip[0]['nik'];
   }
+  else{
+    $lastnip = 100001;
+  }
   $nik = $lastnip + 1;
   $password = md5($nik);
   $data = array(
